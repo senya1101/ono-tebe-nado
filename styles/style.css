@@ -51,8 +51,12 @@
   line-height: 24.3px;
 }
 
-.address a {
+.address__link {
   letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: false;
+  text-underline-offset: 4px;
 }
 
 .header__address {
@@ -69,6 +73,7 @@
   color: #ffffff;
   text-transform: uppercase;
   background-image: url(../images/cover.jpg);
+  background-position: center;
 }
 
 .overlay {
@@ -135,6 +140,7 @@
   border: 1px white solid;
   padding: 12px 32px;
   color: #ffffff;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 25.83px;
   text-transform: uppercase;
@@ -192,7 +198,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   padding: 51px 40px 48px;
   background-position: center;
   background-size: cover;
@@ -264,13 +270,17 @@
 }
 
 .about__text {
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 
-.about__column p:first-of-type {
-  margin-bottom: 24px;
+.about__column p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about p:first-of-type {
   letter-spacing: 0.01em;
 }
 
@@ -301,7 +311,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 149px 1fr;
-  padding: 2px 50px 88px;
+  padding: 0px 50px 88px;
 }
 
 .footer__menu {
